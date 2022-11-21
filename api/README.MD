@@ -5,3 +5,9 @@
 ```
 
 ODM - Object data Modeling
+
+casos de uso - são as tarefas que o usuario poderá fazer dentro da aplicação
+
+utilizar multer para conseguir fazer upload
+
+arquivos estaticos express epxress static

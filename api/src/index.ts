@@ -1,11 +1,16 @@
+import path from 'node:path';
 import express from 'express';
 import mongoose from 'mongoose';
+import { router } from './router';
 
-
-const app = express();
 
 mongoose.connect('mongodb://localhost:27017')
   .then(() => {
+    const app = express();
+
+    app.use(express.json());
+    app.use(router);
+    app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')));
 
     const port = 3002;
     app.listen(port, () => {
