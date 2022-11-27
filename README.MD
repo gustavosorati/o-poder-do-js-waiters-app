@@ -76,7 +76,7 @@ Após a instalação inciar o container.
 Faça um clone da aplicação:
 
 ```
-git clone 
+https://github.com/gustavosorati/o-poder-do-js-waiters-app.git
 ```
 
 Instale as dependências das pastas: **api, frontend, mobile**:
