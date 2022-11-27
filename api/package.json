@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --poll --exit-child --transpile-only --ignore-watch node_modules src/index.ts"
+    "start": "ts-node-dev --poll --exit-child --transpile-only --ignore-watch node_modules src/index.ts"
   },
   "author": "",
   "license": "ISC",
