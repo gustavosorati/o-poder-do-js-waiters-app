@@ -56,17 +56,16 @@ export const ModalBody = styled.div`
 export const OrderDetails = styled.div`
   margin-top: 2rem;
 
+
   > strong {
     font-weight: 500;
     font-size: .875rem;
     opacity: .8;
   }
 
-  .order-items {
-    margin-top: 1rem;
-
     .item {
       display: flex;
+      margin-bottom: 1rem;
 
       & + item {
         margin-top: 1rem;
@@ -113,7 +112,7 @@ export const OrderDetails = styled.div`
         color: #666;
       }
     }
-  }
+
 
 `;
 
@@ -122,6 +121,11 @@ export const Actions = styled.footer`
   display: flex;
   flex-direction: column;
   gap: 8px;
+
+  button:disabled {
+    opacity: .5;
+    cursor: not-allowed
+  }
 
   .primary {
     border: 0;
